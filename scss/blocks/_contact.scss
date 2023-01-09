@@ -1,0 +1,61 @@
+.contact {
+    padding: 146px 250px 160px 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include desktop-small {
+        padding: 80px 80px 80px 80px;
+    }
+    @include tablet {
+        padding: 60px 80px 60px 80px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+    }
+    @include mobile {
+        padding: 50px 40px 50px 40px;
+    }
+    &__container {
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__title {
+        text-align: center;
+        @include text($font-primary, 700, 64px, 96px, $color-white);
+        animation: neon-1 .1s ease-in-out infinite alternate;
+        span {
+            @include text($font-primary, 700, 64px, 96px, $color-primary);
+        }
+        margin-bottom: 55px;
+        @keyframes neon-1 {
+            from {
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(191, 226, 255, 0.52), 0 0 21px rgba(191, 226, 255, 0.92), 0 0 34px rgba(191, 226, 255, 0.78), 0 0 54px rgba(191, 226, 255, 0.92);
+            }
+            to {
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(191, 226, 255, 0.58), 0 0 22px rgba(191, 226, 255, 0.84), 0 0 38px rgba(191, 226, 255, 0.88), 0 0 60px #FFF;
+            }
+        }
+        @include mobile {
+            @include text($font-primary, 700, 40px, 60px, $color-white);
+            span {
+                @include text($font-primary, 700, 40px, 60px, $color-primary);
+            }
+        }
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        @include text($font-primary, 700, 18px, 27px, $color-primary);
+    }
+
+    &__desc {
+        @include text($font-primary, 400, 16px, 24px, $color-text-primary);
+    }
+
+    &__img {
+        
+    }
+}

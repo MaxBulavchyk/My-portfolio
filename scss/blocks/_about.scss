@@ -1,0 +1,70 @@
+.about {
+    padding: 80px 110px 201px 96px;
+    display: flex;
+    gap: 179px;
+    @include desktop-small {
+        padding: 80px 80px 90px 80px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 100px;
+    }
+    @include mobile {
+        padding: 50px 40px 50px 40px;
+        gap: 50px;
+    }
+
+    &__container {
+        position: relative;
+        max-width: 389px;
+    }
+
+    &__title {
+        @include text($font-primary, 700, 64px, 96px, $color-white);
+        animation: neon-1 .1s ease-in-out infinite alternate;
+        transition: $transition;
+        span {
+            @include text($font-primary, 700, 64px, 96px, $color-primary);
+            transition: $transition;
+        }
+        @keyframes neon-1 {
+            from {
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(191, 226, 255, 0.52), 0 0 21px rgba(191, 226, 255, 0.92), 0 0 34px rgba(191, 226, 255, 0.78), 0 0 54px rgba(191, 226, 255, 0.92);
+            }
+            to {
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(191, 226, 255, 0.58), 0 0 22px rgba(191, 226, 255, 0.84), 0 0 38px rgba(191, 226, 255, 0.88), 0 0 60px #FFF;
+            }
+        }
+        @include mobile {
+            @include text($font-primary, 700, 40px, 72px, $color-white);
+            span {
+                @include text($font-primary, 700, 40px, 72px, $color-primary);
+            }
+        }
+    }
+
+    &__lightbulb {
+        position: absolute;
+        right: -36px;
+        top: -11px;
+        @include mobile {
+            right: 8px;
+            top: -32px;
+        }
+    }
+
+    &__note {
+        position: absolute;
+        left: 0;
+        top: -130px;
+        @include desktop-small {
+            display: none;
+        }
+    }
+
+    &__desc {
+        @include text($font-primary, 400, 18px, 27px, $color-text-primary);
+    }
+
+    &__image {
+    }
+}
