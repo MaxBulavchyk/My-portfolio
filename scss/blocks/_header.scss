@@ -2,54 +2,55 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 48px 96px;
+    padding: 16px 96px;
     border-bottom: 1px solid $color-primary;
     @include tablet {
         padding: 48px 60px;
     }
     &__logo {
-        font-family: 'Oswald', sans-serif;;
+        font-family: "Oswald", sans-serif;
         font-weight: 700;
         font-size: 36px;
         line-height: 48px;
-        color: #EEEEEE;
+        color: #eeeeee;
         text-transform: uppercase;
         animation: neon-3 3s steps(1, start) infinite reverse;
     }
     @keyframes neon-3 {
-        0%{
-            color: #00ADB5;
-            text-shadow: 0 0 7px #00ADB5, 0 0 8px #0b3960;
+        0% {
+            color: #00adb5;
+            text-shadow: 0 0 7px #00adb5, 0 0 8px #0b3960;
         }
-        80%{
+        80% {
             color: #fff;
-            text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+            text-shadow: 0 0 6px #fff, 0 0 10px #fff, 0 0 50px #79a7fc;
         }
-        81%{
-            color: #E1F5FE;
-            text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+        81% {
+            color: #e1f5fe;
+            text-shadow: 0 0 6px #fff, 0 0 10px #fff, 0 0 50px #79a7fc;
         }
-        82%{color: #00ADB5;
-            text-shadow: 0 0 7px #00ADB5, 0 0 8px #00ADB5;
+        82% {
+            color: #00adb5;
+            text-shadow: 0 0 7px #00adb5, 0 0 8px #00adb5;
         }
-        83%{
-            color: #E1F5FE;
-            text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+        83% {
+            color: #e1f5fe;
+            text-shadow: 0 0 6px #fff, 0 0 10px #fff, 0 0 50px #79a7fc;
         }
-        84%{
-            color: #00ADB5;
-            text-shadow: 0 0 7px #00ADB5, 0 0 8px #00ADB5;
+        84% {
+            color: #00adb5;
+            text-shadow: 0 0 7px #00adb5, 0 0 8px #00adb5;
         }
-        85%{
-            color: #E1F5FE;
-            text-shadow: 0 0 6px #fff,0 0 10px #fff,0 0 50px #79a7fc;
+        85% {
+            color: #e1f5fe;
+            text-shadow: 0 0 6px #fff, 0 0 10px #fff, 0 0 50px #79a7fc;
         }
-        100%{
-            color: #00ADB5;
-            text-shadow: 0 0 7px #00ADB5,0 0 8px #00ADB5;
+        100% {
+            color: #00adb5;
+            text-shadow: 0 0 7px #00adb5, 0 0 8px #00adb5;
         }
     }
-    
+
     &__burger {
         color: $color-white;
         display: none;
@@ -65,9 +66,8 @@
 .header-nav {
     .material-icons {
         color: $color-white;
-        font-size: 36px;
+        font-size: 24px;
         display: none;
-
         @include tablet-small {
             display: block;
             position: absolute;
@@ -89,16 +89,24 @@
             color: $color-white;
         }
 
-        &._active,
         &:hover {
-            animation: neon-1 .1s ease-in-out infinite alternate;
+            animation: neon-1 0.1s ease-in-out infinite alternate;
         }
         @keyframes neon-1 {
             from {
-                text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(191, 226, 255, 0.52), 0 0 21px rgba(191, 226, 255, 0.92), 0 0 34px rgba(191, 226, 255, 0.78), 0 0 54px rgba(191, 226, 255, 0.92);
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+                    0 0 30px rgba(202, 228, 225, 0.34),
+                    0 0 12px rgba(191, 226, 255, 0.52),
+                    0 0 21px rgba(191, 226, 255, 0.92),
+                    0 0 34px rgba(191, 226, 255, 0.78),
+                    0 0 54px rgba(191, 226, 255, 0.92);
             }
             to {
-                text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(191, 226, 255, 0.58), 0 0 22px rgba(191, 226, 255, 0.84), 0 0 38px rgba(191, 226, 255, 0.88), 0 0 60px #FFF;
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+                    0 0 30px rgba(202, 228, 225, 0.42),
+                    0 0 12px rgba(191, 226, 255, 0.58),
+                    0 0 22px rgba(191, 226, 255, 0.84),
+                    0 0 38px rgba(191, 226, 255, 0.88), 0 0 60px #fff;
             }
         }
     }
@@ -106,22 +114,23 @@
         position: fixed;
         z-index: 9;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         left: 0;
         top: 0;
-        background-image: url("img/CYBERPUNK-WALLPAPER-PHONE.jpg");
-        transform: translateY(-150%);
+        background-image: url("img/cyberpunk.jpg");
         transition: $transition;
+        transform: translateY(-150%);
         .header-nav__ul {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 20%;
+            height: 100%;
             margin: 0;
+            gap: 40px;
             backdrop-filter: blur(8px) brightness(50%);
         }
         .header-nav__a {
-            font-size: 18px;
+            @include text($font-primary, 400, 18px, 27px, $color-white);
         }
     }
     &._active {

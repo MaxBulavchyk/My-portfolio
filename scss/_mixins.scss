@@ -1,3 +1,4 @@
+// Text
 @mixin text($ff, $fw, $fs, $lh, $color) {
     font-family: $ff;
     font-weight: $fw;
@@ -7,24 +8,28 @@
 }
 
 // MEDIA QUERIES
+// 1200px
 @mixin desktop-small {
     @media (max-width: $desktop-small) {
         @content;
     }
 }
 
-@mixin tablet-small {
-    @media (max-width: $tablet-small) {
-        @content;
-    }
-}
-
+// 992px
 @mixin tablet {
     @media (max-width: $tablet) {
         @content;
     }
 }
 
+// 768px
+@mixin tablet-small {
+    @media (max-width: $tablet-small) {
+        @content;
+    }
+}
+
+// 576px
 @mixin mobile {
     @media (max-width: $mobile) {
         @content;

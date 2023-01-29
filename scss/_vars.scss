@@ -10,11 +10,11 @@ $color-text-secondary: #ffffff;
 $color-border: #E7EAEB;
 $color-gray-dark: rgba(57, 62, 70, 0.5); 
 $color-white: #EEEEEE;
-$color-body: #222831;
+$color-body: linear-gradient(180deg, rgb(0, 25, 66),rgb(55, 24, 80));
 
 $transition: 0.2s all ease-in-out;
 
-// breakpoints
+// Breakpoints
 $desktop-small: 1200px;
 $tablet: 992px;
 $tablet-small: 768px;

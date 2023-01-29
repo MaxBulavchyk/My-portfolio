@@ -7,9 +7,6 @@ function navToggle() {
   body.classList.toggle("_overflow");
 }
 
-window.scroll({
-  top: 1, 
-  left: 0, 
-  behavior: 'smooth'
-});
+
+
 

@@ -1,5 +1,5 @@
 .about {
-    padding: 80px 110px 201px 96px;
+    padding: 80px 110px 150px 96px;
     display: flex;
     gap: 179px;
     @include desktop-small {
@@ -22,6 +22,7 @@
         @include text($font-primary, 700, 64px, 96px, $color-white);
         animation: neon-1 .1s ease-in-out infinite alternate;
         transition: $transition;
+        margin-bottom: 36px;
         span {
             @include text($font-primary, 700, 64px, 96px, $color-primary);
             transition: $transition;
@@ -52,19 +53,7 @@
         }
     }
 
-    &__note {
-        position: absolute;
-        left: 0;
-        top: -130px;
-        @include desktop-small {
-            display: none;
-        }
-    }
-
     &__desc {
         @include text($font-primary, 400, 18px, 27px, $color-text-primary);
-    }
-
-    &__image {
     }
 }
