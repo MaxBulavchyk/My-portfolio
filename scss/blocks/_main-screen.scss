@@ -33,24 +33,25 @@
     &__title {
         @include text($font-primary, 700, 96px, 96px, $color-text-secondary);
         color: #ffffff;
-        animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
         transition: $transition;
         span {
             @include text($font-primary, 700, 96px, 96px, $color-primary);
-            animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 3s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+                both;
             transition: $transition;
         }
         margin-bottom: 48px;
         @keyframes text-focus-in {
             0% {
-              filter: blur(12px);
-              opacity: 0;
+                filter: blur(12px);
+                opacity: 0;
             }
             100% {
-              filter: blur(0px);
-              opacity: 1;
+                filter: blur(0px);
+                opacity: 1;
             }
-          }
+        }
         @include desktop-small {
             max-width: 500px;
             @include text(
@@ -97,7 +98,6 @@
     }
 
     &__primary-btn {
-        @include text($font-primary, 700, 18px, 27px, $color-white);
         border-radius: 24px;
         background: $color-primary;
         padding: 10px 32px;
@@ -110,10 +110,19 @@
             padding: 10px 16px;
         }
         &:hover {
-            @include text($font-primary, 700, 18px, 27px, $color-primary);
             background: $color-gray-dark;
-            box-shadow: 0 0 10px 0 $color-primary inset, 0 0 10px 4px $color-primary;
+            box-shadow: 0 0 10px 0 $color-primary inset,
+                0 0 10px 4px $color-primary;
+            .main-screen__a {
+                color: $color-primary;
+            }
         }
+    }
+
+    &__a {
+        @include text($font-primary, 700, 18px, 27px, $color-white);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        transition: $transition;
     }
 
     &__secondary-btn {
@@ -137,7 +146,11 @@
         &:hover {
             @include text($font-primary, 700, 18px, 27px, $color-primary);
             background: $color-gray-dark;
-            box-shadow: 0 0 10px 0 $color-primary inset, 0 0 10px 4px $color-primary;
+            box-shadow: 0 0 10px 0 $color-primary inset,
+                0 0 10px 4px $color-primary;
+            .main-screen__a {
+                color: $color-primary;
+            }     
         }
     }
 }

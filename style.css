@@ -652,11 +652,6 @@ img {
     display: flex;
     gap: 24px; }
   .main-screen__primary-btn {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    color: #EEEEEE;
     border-radius: 24px;
     background: #00ADB5;
     padding: 10px 32px;
@@ -670,14 +665,20 @@ img {
       .main-screen__primary-btn {
         padding: 10px 16px; } }
     .main-screen__primary-btn:hover {
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 27px;
-      color: #00ADB5;
       background: rgba(57, 62, 70, 0.5);
       -webkit-box-shadow: 0 0 10px 0 #00ADB5 inset, 0 0 10px 4px #00ADB5;
               box-shadow: 0 0 10px 0 #00ADB5 inset, 0 0 10px 4px #00ADB5; }
+      .main-screen__primary-btn:hover .main-screen__a {
+        color: #00ADB5; }
+  .main-screen__a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #EEEEEE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out; }
   .main-screen__secondary-btn {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -715,6 +716,8 @@ img {
       background: rgba(57, 62, 70, 0.5);
       -webkit-box-shadow: 0 0 10px 0 #00ADB5 inset, 0 0 10px 4px #00ADB5;
               box-shadow: 0 0 10px 0 #00ADB5 inset, 0 0 10px 4px #00ADB5; }
+      .main-screen__secondary-btn:hover .main-screen__a {
+        color: #00ADB5; }
 
 .about {
   padding: 80px 110px 150px 96px;
@@ -1037,12 +1040,14 @@ img {
     font-size: 18px;
     line-height: 27px;
     color: #00ADB5; }
-  .contact__desc {
+  .contact__a {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: rgba(238, 238, 238, 0.75); }
+    .contact__a:hover {
+      color: #EEEEEE; }
 
 .footer {
   border-top: 1px solid #00ADB5; }

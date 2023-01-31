@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" id="html">
-	
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,16 +30,16 @@
 				<nav id="nav" class="header-nav">
 					<ul class="header-nav__ul">
 						<li class="header-nav__li">
-							<a href="#home" class="header-nav__a _active" onclick="navToggle()">Home</a>
+							<a href="#home" class="header-nav__a _active" onclick="navClose()">Home</a>
 						</li>
 						<li class="header-nav__li">
-							<a href="#about me" class="header-nav__a _active" onclick="navToggle()">About Me</a>
+							<a href="#about me" class="header-nav__a _active" onclick="navClose()">About Me</a>
 						</li>
 						<li class="header-nav__li">
-							<a href="#projects" class="header-nav__a _active" onclick="navToggle()">Projects</a>
+							<a href="#projects" class="header-nav__a _active" onclick="navClose()">Projects</a>
 						</li>
 						<li class="header-nav__li">
-							<a href="#contact me" class="header-nav__a _active" onclick="navToggle()">Contact me</a>
+							<a href="#contact me" class="header-nav__a _active" onclick="navClose()">Contact me</a>
 						</li>
 					</ul>
 					<span id="icon-close" onclick="navToggle()" class="material-icons">
@@ -47,7 +47,7 @@
 					</span>
 				</nav>
 			</header>
-	
+
 			<section id="home" class="main-screen">
 				<div class="main-screen__container">
 					<div class="main-screen__line">
@@ -56,9 +56,12 @@
 					<div class="main-screen__info">
 						<div class="main-screen__title">HTML/CSS <span>DEVELOPER</span></div>
 						<div class="main-screen__btns">
-							<div class="main-screen__primary-btn btn">Hire me</div>
+							<div class="main-screen__primary-btn btn">
+								<a class="main-screen__a" href="#contact me">Hire me</a>
+							</div>
 							<div class="main-screen__secondary-btn">
-								<p>Download CV</p>
+								<a class="main-screen__a" href="https://maxbulavchyk.github.io/My-resume/">Download
+									CV</a>
 								<span class="material-symbols-outlined">download</span>
 							</div>
 						</div>
@@ -68,7 +71,7 @@
 					<img src="./img/man1.png" alt="Man">
 				</div>
 			</section>
-	
+
 			<section id="about me" class="about">
 				<div class="about__container">
 					<div class="about__title">About <span>me</span></div>
@@ -76,38 +79,42 @@
 						<img src="./img/lightbulb.png" alt="Lightbulb">
 					</div>
 					<div class="about__desc">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+						interdum, ac
 						aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-						inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet,
-						consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class
+						inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit
+						amet,
+						consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+						Class
 						aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
-						tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit.
+						tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing
+						elit.
 						Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
 					</div>
-	
+
 				</div>
 				<div class="about__image">
 					<img src="./img/man2.png" alt="Man">
 				</div>
 			</section>
-	
+
 			<section class="works">
 				<div class="works__wrapper">
 					<div id="projects" class="works__title">My recent <span>works</span></div>
 					<div class="works__list">
 						<div class="works__item">
 							<div class="works__img">
-								<img src="./img/quiro.png" alt="Site">
+								<img src="./img/atrio.png" alt="Site">
 							</div>
 							<div class="works__info">
-								<div class="works__subtitle">Quiro</div>
+								<div class="works__subtitle">A-Trio</div>
 								<div class="works__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
 									veniam libero nemo? Repellat placeat nihil voluptates, sequi maiores eligendi
 									corrupti.Nihil
 									veniam libero nemo? Repellat placeat nihil voluptates, sequi maiores eligendi
 									corrupti.Repellat...</div>
 								<div class="works__btn">
-									<a class="works__a" href="https://github.com/MaxBulavchyk/Quiro">Details</a>
+									<a class="works__a" href="https://a-trio.com.ua/">Details</a>
 								</div>
 							</div>
 						</div>
@@ -155,7 +162,8 @@
 									veniam libero nemo? Repellat placeat nihil voluptates, sequi maiores eligendi
 									corrupti.Repellat...</div>
 								<div class="works__btn">
-									<a class="works__a" href="https://github.com/MaxBulavchyk/Freelancer-Portfolio">Details</a>
+									<a class="works__a"
+										href="https://github.com/MaxBulavchyk/Freelancer-Portfolio">Details</a>
 								</div>
 							</div>
 						</div>
@@ -203,7 +211,8 @@
 									veniam libero nemo? Repellat placeat nihil voluptates, sequi maiores eligendi
 									corrupti.Repellat...</div>
 								<div class="works__btn">
-									<a class="works__a" href="https://github.com/MaxBulavchyk/The-Power-of-Simplicity">Details</a>
+									<a class="works__a"
+										href="https://github.com/MaxBulavchyk/The-Power-of-Simplicity">Details</a>
 								</div>
 							</div>
 						</div>
@@ -239,36 +248,37 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</section>
-	
+
 			<section class="contact">
 				<div id="contact me" class="contact__container">
 					<div class="contact__title">Contact <span>me</span></div>
 					<div class="contact__item">
 						<div class="contact__subtitle">Telegram</div>
-						<div class="contact__desc">@thebestcodder</div>
+						<a class="contact__a" href="https://t.me/Max_BLK">https://t.me/Max_BLK</a>
 					</div>
 					<div class="contact__item">
 						<div class="contact__subtitle">Github</div>
-						<div class="contact__desc">https://github.com/MaxBulavchyk</div>
+						<a class="contact__a" href="https://github.com/MaxBulavchyk">https://github.com/MaxBulavchyk</a>
 					</div>
 					<div class="contact__item">
 						<div class="contact__subtitle">E-mail</div>
-						<div class="contact__desc">test@gmail.com</div>
+						<a class="contact__a" href="mailto:maxblk555@gmail.com">maxblk555@gmail.com</a>
 					</div>
 					<div class="contact__item">
 						<div class="contact__subtitle">Linkedin</div>
-						<div class="contact__desc">https://linkedin.com/thebestcodder</div>
+						<a class="contact__a"
+							href="https://linkedin.com/in/max-bulavchyk">https://linkedin.com/in/max-bulavchyk</a>
 					</div>
 				</div>
 				<div class="contact__img">
 					<img src="./img/man3.png" alt="Man">
 				</div>
 			</section>
-	
+
 			<footer class="footer">
 				<div class="footer__wrapper">
 					<nav class="footer-nav">
@@ -291,7 +301,7 @@
 			</footer>
 		</div>
 	</div>
-	
+
 	<script src="script.js"></script>
 </body>
 
